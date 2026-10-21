@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPMC - Magiee Pasta Macroni Corner | Nyay Khand 1st, Indirapuram</title>
+    <meta name="description" content="MPMC (Magiee Pasta Macroni Corner) - Sizzling hot Maggi, creamy Italian & Desi Pastas, and spicy Macaroni (100% Pure Veg & Eggless). Free delivery up to 2 KM in Nyay Khand 1st, Indirapuram, Ghaziabad. Contact: Coming Soon!">
+
+    <!-- Google Fonts: Outfit (Stylish Headlines), Caveat (Handwritten Cafe Script), Plus Jakarta Sans (Modern Clean UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#E63946',
+                            crimson: '#D90429',
+                            dark: '#1C1514',
+                            yellow: '#F59E0B',
+                            amber: '#EA580C',
+                            cream: '#FAF7F2',
+                            ivory: '#FFFDF9',
+                            card: '#FFFFFF',
+                            text: '#1E1B18',
+                            muted: '#6B625B',
+                            border: '#EADFD5'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Outfit"', 'sans-serif'],
+                        script: ['"Caveat"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#FAF7F2] text-brand-text font-sans antialiased selection:bg-brand-red selection:text-white pb-24 md:pb-0 relative min-h-screen">
+
+    <!-- Ambient Food Watermark Wallpaper (Low Transparency 6-8%) -->
+    <div class="food-bg-ambient" aria-hidden="true">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 p-8 -rotate-2 scale-110">
+            <!-- Maggi Watermarks -->
+            <div class="h-80 rounded-3xl bg-cover bg-center food-watermark-card" style="background-image: url('https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80')"></div>
+            <!-- Alfredo Pasta Watermarks -->
+            <div class="h-80 rounded-3xl bg-cover bg-center food-watermark-card" style="background-image: url('https://images.unsplash.com/photo-1621996346565-e3d5d6281729?auto=format&fit=crop&w=600&q=80')"></div>
+            <!-- Desi Macroni Watermarks -->
+            <div class="h-80 rounded-3xl bg-cover bg-center food-watermark-card" style="background-image: url('https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80')"></div>
+            <!-- Arrabiata Red Sauce Pasta -->
+            <div class="h-80 rounded-3xl bg-cover bg-center food-watermark-card" style="background-image: url('https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80')"></div>
+            <!-- Cheese Butter Maggi -->
+            <div class="h-80 rounded-3xl bg-cover bg-center food-watermark-card" style="background-image: url('https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=600&q=80')"></div>
+            <!-- Baked Italian Pasta -->
+            <div class="h-80 rounded-3xl bg-cover bg-center food-watermark-card" style="background-image: url('https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=600&q=80')"></div>
+            <!-- Tandoori Schezwan Macroni -->
+            <div class="h-80 rounded-3xl bg-cover bg-center food-watermark-card" style="background-image: url('https://images.unsplash.com/photo-1516100882582-76c9a3ca2f18?auto=format&fit=crop&w=600&q=80')"></div>
+            <!-- Peri Peri Double Cheese Maggi -->
+            <div class="h-80 rounded-3xl bg-cover bg-center food-watermark-card" style="background-image: url('https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80')"></div>
+        </div>
+    </div>
+
+    <!-- Top Announcement Bar (Attractive Luxury Flame & Gold Style) -->
+    <div class="relative bg-gradient-to-r from-[#9A031E] via-[#D90429] to-[#FB8500] text-white font-bold text-xs md:text-sm py-2 px-4 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-2 overflow-x-auto whitespace-nowrap">
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center gap-1 px-3 py-0.5 bg-white text-brand-crimson rounded-full text-[11px] font-black uppercase tracking-wider shadow-md">
+                    <i class="fa-solid fa-bolt text-brand-amber"></i> Fast Delivery
+                </span>
+                <span class="tracking-wide">🛵 <strong>FREE Delivery up to 2 KM</strong> | Delivery available up to 3 KM in Indirapuram!</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-semibold">
+                <span class="flex items-center gap-1.5 px-2.5 py-0.5 bg-black/20 rounded-full border border-white/20"><i class="fa-solid fa-phone text-yellow-300"></i> Contact: Coming Soon</span>
+                <span class="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 bg-black/20 rounded-full border border-white/20">📍 Nyay Khand 1st, Indirapuram</span>
+            </div>
+        </div>
+        <!-- Golden Bottom Shimmer Line -->
+        <div class="absolute bottom-0 inset-x-0 h-[2px] bg-gradient-to-r from-amber-300 via-yellow-100 to-amber-400 opacity-80"></div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="border-b border-amber-200/80 bg-white/95 backdrop-blur-md sticky top-[35px] z-40 transition-all duration-300 shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Stylish Brand Upper Title Box -->
+            <a href="#" class="group">
+                <div class="flex items-center gap-3.5 bg-gradient-to-r from-white via-amber-50/80 to-orange-50/60 border border-amber-300/80 group-hover:border-brand-crimson/60 px-3.5 py-2 rounded-2xl shadow-[0_4px_16px_rgba(245,158,11,0.12)] group-hover:shadow-[0_6px_20px_rgba(217,4,41,0.18)] transition-all duration-300">
+                    <!-- Custom Crafted SVG Emblem Logo with Golden Glow -->
+                    <div class="relative w-12 h-12 shrink-0">
+                        <svg class="w-12 h-12 group-hover:scale-105 transition-transform duration-300 drop-shadow-md" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#E63946" />
+                                    <stop offset="50%" stop-color="#EA580C" />
+                                    <stop offset="100%" stop-color="#F59E0B" />
+                                </linearGradient>
+                                <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FDE68A" />
+                                    <stop offset="100%" stop-color="#D97706" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Outer Golden Ring -->
+                            <circle cx="50" cy="50" r="47" stroke="url(#goldRim)" stroke-width="3" stroke-dasharray="4 2"/>
+                            <circle cx="50" cy="50" r="44" fill="url(#logoGrad)"/>
+                            
+                            <!-- Steaming Bowl Illustration -->
+                            <path d="M26 53C26 66.2548 36.7452 77 50 77C63.2548 77 74 66.2548 74 53H26Z" fill="#FFFDF9"/>
+                            <!-- Bowl Rim -->
+                            <rect x="23" y="49" width="54" height="6" rx="3" fill="#FFFDF9"/>
+                            
+                            <!-- Delicious Noodle Swirls inside Bowl -->
+                            <path d="M32 50Q38 41 46 50T60 50T68 50" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+                            <path d="M36 54Q43 46 50 54T64 54" stroke="#EA580C" stroke-width="2.5" stroke-linecap="round"/>
+                            
+                            <!-- Fork with Noodles -->
+                            <path d="M51 22V42M48 22V32M54 22V32" stroke="#FFFDF9" stroke-width="2" stroke-linecap="round"/>
+                            
+                            <!-- Steam Aroma Swirls -->
+                            <path d="M38 29C36 26 40 22 38 18" stroke="#FFFDF9" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 3"/>
+                            <path d="M62 29C60 26 64 22 62 18" stroke="#FFFDF9" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 3"/>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-display text-2xl font-black tracking-tight text-brand-text group-hover:text-brand-crimson transition-colors">MPMC</span>
+                            <span class="text-[10px] uppercase font-bold tracking-wider bg-emerald-100 text-emerald-800 border border-emerald-300 px-2 py-0.5 rounded-full flex items-center gap-1 shadow-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> 100% Pure Veg (No Egg)
+                            </span>
+                        </div>
+                        <p class="text-xs text-brand-amber tracking-wide font-extrabold uppercase font-display">Magiee • Pasta • Macroni Corner</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-sm text-brand-text/80">
+                <a href="#menu" class="hover:text-brand-crimson transition-colors flex items-center gap-1.5"><i class="fa-solid fa-utensils text-brand-red text-xs"></i> Menu</a>
+                <a href="#delivery-checker" class="hover:text-brand-crimson transition-colors flex items-center gap-1.5"><i class="fa-solid fa-motorcycle text-brand-red text-xs"></i> Check Delivery</a>
+                <a href="#about" class="hover:text-brand-crimson transition-colors flex items-center gap-1.5"><i class="fa-solid fa-heart text-brand-red text-xs"></i> Why Us</a>
+                <a href="#contact" class="hover:text-brand-crimson transition-colors flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red text-xs"></i> Find Us</a>
+            </nav>
+
+            <!-- Action CTAs -->
+            <div class="flex items-center gap-3">
+                <!-- Cart Trigger Button -->
+                <button id="open-cart-btn" class="relative p-2.5 sm:px-4 sm:py-2.5 rounded-xl bg-amber-50 hover:bg-amber-100/80 border border-amber-200 transition-all flex items-center gap-2 text-brand-text shadow-sm">
+                    <i class="fa-solid fa-bag-shopping text-brand-amber text-lg"></i>
+                    <span class="hidden sm:inline font-bold text-sm">Cart</span>
+                    <span id="cart-counter" class="w-5 h-5 bg-brand-crimson text-white text-xs font-black rounded-full flex items-center justify-center -ml-1 shadow-sm">0</span>
+                </button>
+
+                <!-- Direct WhatsApp CTA Button -->
+                <button onclick="notifyComingSoon()" class="hidden sm:inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold px-4 py-2.5 rounded-xl text-sm shadow-md shadow-[#25D366]/25 transition-all hover:scale-105 font-display">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Booking: Coming Soon</span>
+                </button>
+
+                <!-- Call Button -->
+                <button onclick="notifyComingSoon()" class="p-2.5 rounded-xl bg-brand-red hover:bg-brand-crimson text-white transition-all sm:hidden shadow-sm" title="Contact Coming Soon">
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-8 pb-16 md:py-20 lg:py-24 bg-gradient-to-b from-[#FFF5EB]/90 via-[#FAF7F2]/90 to-[#FAF7F2]">
+        <!-- Low Transparency Floating Food Photos in Background -->
+        <div class="hero-food-watermark-1" style="background-image: url('https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="hero-food-watermark-2" style="background-image: url('https://images.unsplash.com/photo-1621996346565-e3d5d6281729?auto=format&fit=crop&w=700&q=80')"></div>
+        
+        <!-- Soft Warm Glow Accents -->
+        <div class="absolute top-10 left-1/4 w-96 h-96 bg-brand-yellow/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-brand-red/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left: Text & Badges -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <!-- Attractive Upper Title Box / Cafe Badge -->
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-2xl bg-gradient-to-r from-brand-crimson via-brand-amber to-brand-yellow text-white text-xs sm:text-sm font-extrabold shadow-lg shadow-brand-crimson/25 border-2 border-white/60 transform hover:scale-[1.03] transition-all duration-300">
+                        <span class="flex h-2.5 w-2.5 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-200 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
+                        </span>
+                        <i class="fa-solid fa-fire text-yellow-200 text-sm"></i>
+                        <span class="font-display tracking-wider uppercase text-[11px] sm:text-xs drop-shadow-sm">Nyay Khand 1st • Indirapuram's Favorite Street Food Hub</span>
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.15] text-brand-text">
+                        Cravings for Hot <br class="hidden sm:inline"/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-crimson via-brand-amber to-brand-yellow font-extrabold">Magiee, Pasta & Macroni?</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-brand-muted max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Welcome to <strong class="text-brand-text font-bold">MPMC (Magiee Pasta Macroni Corner)</strong> at Nyay Khand 1st, Indirapuram! We serve hot, cheesy, desi-tadka Maggi, velvety Italian Pastas, and mouth-watering spicy Macaroni cooked fresh on your order.
+                    </p>
+
+                    <!-- Key Selling Perks -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 max-w-xl mx-auto lg:mx-0">
+                        <div class="p-3.5 rounded-2xl bg-white border border-amber-200/70 shadow-sm text-left">
+                            <div class="text-brand-amber text-xl mb-1"><i class="fa-solid fa-truck-fast"></i></div>
+                            <div class="text-xs font-bold text-brand-text">Free Under 2 KM</div>
+                            <div class="text-[11px] text-brand-muted font-medium">Delivery up to 3 KM</div>
+                        </div>
+                        <div class="p-3.5 rounded-2xl bg-white border border-amber-200/70 shadow-sm text-left">
+                            <div class="text-[#25D366] text-xl mb-1"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="text-xs font-bold text-brand-text">Instant WhatsApp</div>
+                            <div class="text-[11px] text-brand-muted font-medium">Order in 10 Seconds</div>
+                        </div>
+                        <div class="p-3.5 rounded-2xl bg-white border border-amber-200/70 shadow-sm text-left col-span-2 sm:col-span-1">
+                            <div class="text-emerald-600 text-xl mb-1"><i class="fa-solid fa-seedling"></i></div>
+                            <div class="text-xs font-bold text-brand-text">100% Pure Veg</div>
+                            <div class="text-[11px] text-emerald-700 font-bold">Strictly No Egg / Eggless</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#menu" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-red to-brand-crimson hover:from-brand-crimson hover:to-brand-red text-white font-extrabold text-center shadow-lg shadow-brand-red/25 hover:scale-105 transition-all flex items-center justify-center gap-2 font-display text-sm">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>Explore Delicious Menu</span>
+                        </a>
+                        <button onclick="notifyComingSoon()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white border border-[#25D366] hover:bg-[#25D366]/10 text-emerald-700 font-bold text-center transition-all flex items-center justify-center gap-2 shadow-sm font-display text-sm">
+                            <i class="fa-brands fa-whatsapp text-lg text-[#25D366]"></i>
+                            <span>Booking: Coming Soon</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Interactive Visual Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Main Card -->
+                        <div class="relative rounded-3xl overflow-hidden border-2 border-amber-200/80 bg-white shadow-xl group">
+                            <img src="https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=900&q=80" 
+                                 alt="Cheesy Masala Maggi at MPMC" 
+                                 class="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                            
+                            <!-- Overlay Content on Image -->
+                            <div class="absolute bottom-0 inset-x-0 p-6 space-y-2">
+                                <span class="px-3 py-1 bg-brand-yellow text-slate-950 font-black text-xs rounded-full shadow font-display">⭐ Bestseller</span>
+                                <h3 class="text-2xl font-black text-white font-display">Cheese Loaded Tadka Maggi</h3>
+                                <p class="text-xs text-slate-200">Bursting with melting mozzarella, sautéed capsicum, sweet corn & butter desi tadka.</p>
+                                <div class="flex items-center justify-between pt-2">
+                                    <span class="text-2xl font-black text-brand-yellow font-display">₹89 <span class="text-xs text-gray-300 line-through">₹110</span></span>
+                                    <button onclick="quickAddToCart('maggi-2')" class="px-4 py-2 bg-brand-red hover:bg-brand-crimson text-white text-xs font-extrabold rounded-lg shadow-md transition-all flex items-center gap-1.5 font-display">
+                                        <i class="fa-solid fa-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="absolute -top-4 -right-4 bg-white border border-amber-200 p-3 rounded-2xl shadow-lg flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-brand-amber flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-[11px] text-brand-muted font-semibold">Prep Time</div>
+                                <div class="text-xs font-black text-brand-text font-display">10 - 15 Mins</div>
+                            </div>
+                        </div>
+
+                        <div class="absolute -bottom-5 -left-4 bg-white border border-amber-200 p-3 rounded-2xl shadow-lg flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <div class="text-[11px] text-brand-muted font-semibold">Hygiene Assured</div>
+                                <div class="text-xs font-black text-brand-text font-display">100% Fresh Daily</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Distance Policy & Eligibility Banner -->
+    <section id="delivery-checker" class="py-12 bg-white border-y border-amber-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-[#FFF9F2]/95 via-white/95 to-[#FFF4E8]/95 border border-amber-200 rounded-3xl p-6 sm:p-10 shadow-lg relative overflow-hidden">
+                <!-- Low-transparency food photo watermark in background -->
+                <div class="absolute -right-10 -bottom-10 w-72 h-72 rounded-full bg-cover bg-center opacity-[0.06] filter saturate-150 contrast-125 pointer-events-none" style="background-image: url('https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+                    
+                    <!-- Left: Delivery Rules Info -->
+                    <div class="lg:col-span-7 space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-red/10 text-brand-crimson text-xs font-black tracking-wide border border-brand-red/20 font-display">
+                            <i class="fa-solid fa-location-crosshairs"></i> DELIVERY ZONE: NYAY KHAND 1ST, INDIRAPURAM
+                        </div>
+                        <h2 class="font-display text-2xl sm:text-3xl font-black text-brand-text">
+                            Check Your Delivery Charge & Time
+                        </h2>
+                        <p class="text-sm text-brand-muted leading-relaxed">
+                            We deliver hot and fresh within a <strong>3-Kilometer radius</strong> from our kitchen in Nyay Khand 1st, Indirapuram, Ghaziabad. Enjoy <strong>Zero Delivery Fee</strong> for all orders within 2 KM!
+                        </p>
+
+                        <!-- Rule Cards -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200 flex items-start gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-600 flex items-center justify-center shrink-0 text-lg">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-extrabold text-brand-text font-display">0 to 2 Kilometers</div>
+                                    <div class="text-xs text-emerald-700 font-bold">100% FREE DELIVERY 🚀</div>
+                                    <div class="text-[11px] text-gray-500">Nyay Khand 1, 2, Gyan Khand nearby</div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-200 flex items-start gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-brand-amber flex items-center justify-center shrink-0 text-lg">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-extrabold text-brand-text font-display">2 to 3 Kilometers</div>
+                                    <div class="text-xs text-amber-700 font-bold">Only ₹20 Nominal Fee 🛵</div>
+                                    <div class="text-[11px] text-gray-500">Abhay Khand, Niti Khand, Kala Patthar</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Locality / Distance Calculator -->
+                    <div class="lg:col-span-5 bg-white border border-amber-200/80 p-6 rounded-2xl space-y-4 shadow-sm">
+                        <h3 class="font-display text-base font-bold text-brand-text flex items-center gap-2">
+                            <i class="fa-solid fa-calculator text-brand-amber"></i>
+                            Select Your Sector / Distance
+                        </h3>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-brand-text mb-1.5">Choose your Indirapuram locality:</label>
+                            <select id="locality-select" class="w-full bg-[#FAF7F2] border border-amber-200 text-brand-text rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-amber transition-colors">
+                                <option value="0.5">Nyay Khand 1st (Near MPMC Stall) - 0.5 km</option>
+                                <option value="1.0">Nyay Khand 2nd / 3rd - ~1.0 km</option>
+                                <option value="1.5">Gyan Khand 1 / 2 / 3 - ~1.5 km</option>
+                                <option value="1.8">Kala Patthar Road - ~1.8 km</option>
+                                <option value="2.2">Niti Khand 1 / 2 / 3 - ~2.2 km</option>
+                                <option value="2.5">Abhay Khand 1 / 2 / 3 - ~2.5 km</option>
+                                <option value="2.8">Shipra Sun City / Mall Road - ~2.8 km</option>
+                                <option value="2.9">Ahinsa Khand 1 / 2 - ~2.9 km</option>
+                                <option value="3.5">Vasundhara / Vaishali (> 3 km - Takeaway/Call)</option>
+                                <option value="custom">Other / Custom Distance</option>
+                            </select>
+                        </div>
+
+                        <!-- Custom input if needed -->
+                        <div id="custom-distance-box" class="hidden">
+                            <label class="block text-xs font-semibold text-brand-text mb-1">Enter approximate distance (in KM):</label>
+                            <input type="number" id="custom-distance-input" placeholder="e.g. 2.4" step="0.1" min="0" max="10" class="w-full bg-[#FAF7F2] border border-amber-200 text-brand-text rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-amber">
+                        </div>
+
+                        <!-- Live Calculation Result Card -->
+                        <div id="distance-result-badge" class="p-4 rounded-xl bg-emerald-50 border border-emerald-300 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-gray-500 block font-medium">Delivery Status:</span>
+                                <span id="distance-status-text" class="text-sm font-black text-emerald-700 font-display">FREE DELIVERY AVAILABLE!</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-xs text-gray-500 block font-medium">Delivery Charge:</span>
+                                <span id="distance-fee-text" class="text-lg font-black text-brand-text font-display">₹0</span>
+                            </div>
+                        </div>
+
+                        <p class="text-[11px] text-gray-500 italic">
+                            *Orders above 3 KM can be scheduled for self-pickup upon opening (Phone / WhatsApp: <strong>Coming Soon</strong>).
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-100 via-orange-100 to-red-100 border border-amber-300 text-brand-amber font-display font-black text-xs uppercase tracking-wider shadow-sm">
+                <i class="fa-solid fa-crown text-amber-600"></i> The Holy Trinity of Street Food
+            </div>
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-brand-text tracking-tight">
+                Magiee • Pasta • Macroni Menu
+            </h2>
+            <p class="text-sm sm:text-base text-brand-muted leading-relaxed">
+                We specialize exclusively in the holy trinity of street-style comfort food: sizzling Maggi, velvety Italian & Desi Pastas, and spicy sautéed Macaroni prepared with pure Amul butter & cheese.
+            </p>
+
+            <!-- Search and Filter Bar -->
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+                <!-- Search Input -->
+                <div class="relative w-full sm:w-72">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-xs"></i>
+                    <input type="text" id="menu-search" placeholder="Search Maggi, Pasta, Macroni..." class="w-full pl-9 pr-4 py-2.5 bg-white border border-amber-200/90 rounded-xl text-sm text-brand-text placeholder-gray-400 focus:outline-none focus:border-brand-amber shadow-sm transition-all">
+                </div>
+
+                <!-- Category Tabs: Only the 3 Specialties -->
+                <div class="flex items-center gap-1.5 overflow-x-auto w-full sm:w-auto p-1.5 bg-white rounded-2xl border border-amber-200/80 shadow-sm no-scrollbar">
+                    <button class="menu-tab-btn active px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap font-display" data-category="all">
+                        All 3 Specialties
+                    </button>
+                    <button class="menu-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap text-brand-muted hover:text-brand-text font-display" data-category="maggi">
+                        🍜 Magiee Special
+                    </button>
+                    <button class="menu-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap text-brand-muted hover:text-brand-text font-display" data-category="pasta">
+                        🍝 Pasta Corner
+                    </button>
+                    <button class="menu-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap text-brand-muted hover:text-brand-text font-display" data-category="macroni">
+                        🥘 Macroni Junction
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food Menu Grid (Populated dynamically via app.js) -->
+        <div id="menu-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Dynamic Cards will be rendered here -->
+        </div>
+
+        <!-- Empty Search Fallback -->
+        <div id="no-results" class="hidden text-center py-16 space-y-3">
+            <div class="text-4xl text-brand-muted"><i class="fa-solid fa-cookie-bite"></i></div>
+            <h4 class="font-display text-lg font-bold text-brand-text">No dishes matched your search</h4>
+            <p class="text-xs text-brand-muted">Try searching for "Cheese", "Pasta", "Maggi", or "Tadka".</p>
+            <button onclick="resetMenuFilter()" class="px-4 py-2 bg-brand-crimson text-white rounded-lg text-xs font-bold hover:bg-brand-red shadow">Show Full Menu</button>
+        </div>
+    </section>
+
+    <!-- Why Choose MPMC / Highlights Section -->
+    <section id="about" class="py-16 bg-white border-y border-amber-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <span class="font-script text-2xl text-brand-amber block">Freshness You Can Taste</span>
+                <h2 class="font-display text-3xl font-black text-brand-text">Why Nyay Khand Loves MPMC</h2>
+                <p class="text-xs sm:text-sm text-brand-muted">We don't cut corners on flavor, cheese, or hygiene. Every single plate is cooked fresh when you order.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feature 1 -->
+                <div class="p-6 rounded-2xl bg-[#FAF7F2] border border-amber-200/70 hover:border-brand-amber transition-all space-y-3 shadow-sm hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-brand-amber flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-cheese"></i>
+                    </div>
+                    <h3 class="font-display text-base font-bold text-brand-text">Amul Butter & Dairy Cheese</h3>
+                    <p class="text-xs text-brand-muted leading-relaxed">No synthetic cheese sauce. We use authentic grated mozzarella and pure Amul butter for rich creaminess.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-6 rounded-2xl bg-[#FAF7F2] border border-amber-200/70 hover:border-brand-red transition-all space-y-3 shadow-sm hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-red-100 text-brand-red flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-fire-burner"></i>
+                    </div>
+                    <h3 class="font-display text-base font-bold text-brand-text">Cooked Fresh To Order</h3>
+                    <p class="text-xs text-brand-muted leading-relaxed">Never pre-boiled or reheated in a microwave. Sizzling hot wok-tossed recipes right before packaging.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-6 rounded-2xl bg-[#FAF7F2] border border-amber-200/70 hover:border-emerald-500 transition-all space-y-3 shadow-sm hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-motorcycle"></i>
+                    </div>
+                    <h3 class="font-display text-base font-bold text-brand-text">Free Under 2 KM Delivery</h3>
+                    <p class="text-xs text-brand-muted leading-relaxed">Swift doorstep delivery within Nyay Khand & nearby sectors. Free up to 2 km and just ₹20 under 3 km.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="p-6 rounded-2xl bg-[#FAF7F2] border border-amber-200/70 hover:border-[#25D366] transition-all space-y-3 shadow-sm hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl">
+                        <i class="fa-brands fa-whatsapp text-2xl text-[#25D366]"></i>
+                    </div>
+                    <h3 class="font-display text-base font-bold text-brand-text">One-Click WhatsApp Booking</h3>
+                    <p class="text-xs text-brand-muted leading-relaxed">No complicated app downloads. Customize your order, pick add-ons, and order directly on WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews / Testimonials -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+            <div class="flex items-center justify-center gap-1 text-brand-yellow text-sm">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h2 class="font-display text-2xl sm:text-3xl font-black text-brand-text">Loved by Indirapuram Foodies</h2>
+            <p class="text-xs sm:text-sm text-brand-muted">Here is what local neighbors and evening snackers say about MPMC.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Review 1 -->
+            <div class="p-6 rounded-2xl bg-white border border-amber-200/70 space-y-4 shadow-sm">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-1 text-brand-yellow text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-[10px] text-gray-500 font-semibold">Nyay Khand 1</span>
+                </div>
+                <p class="text-xs sm:text-sm text-brand-text/90 italic">"The Cheese Butter Maggi and Desi Masala Macroni here are absolutely unbeatable. Super fast delivery in Nyay Khand 1 and arrived piping hot!"</p>
+                <div class="flex items-center gap-3 pt-1">
+                    <div class="w-8 h-8 rounded-full bg-brand-red flex items-center justify-center font-bold text-xs text-white">RS</div>
+                    <div>
+                        <div class="text-xs font-bold text-brand-text font-display">Rohit Sharma</div>
+                        <div class="text-[10px] text-brand-muted">Frequent Customer</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="p-6 rounded-2xl bg-white border border-amber-200/70 space-y-4 shadow-sm">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-1 text-brand-yellow text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-[10px] text-gray-500 font-semibold">Gyan Khand 2</span>
+                </div>
+                <p class="text-xs sm:text-sm text-brand-text/90 italic">"White Sauce Pasta is super creamy and loaded with sweet corn and oregano. Free delivery within 2km is an amazing perk for late evening cravings."</p>
+                <div class="flex items-center gap-3 pt-1">
+                    <div class="w-8 h-8 rounded-full bg-brand-yellow text-slate-950 flex items-center justify-center font-bold text-xs">PK</div>
+                    <div>
+                        <div class="text-xs font-bold text-brand-text font-display">Pooja Kulkarni</div>
+                        <div class="text-[10px] text-brand-muted">Verified Foodie</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="p-6 rounded-2xl bg-white border border-amber-200/70 space-y-4 shadow-sm">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-1 text-brand-yellow text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-[10px] text-gray-500 font-semibold">Kala Patthar</span>
+                </div>
+                <p class="text-xs sm:text-sm text-brand-text/90 italic">"Ordering via their WhatsApp is literally effortless. Sent my order, they confirmed in 1 minute, and delivered right on time. Highly recommended!"</p>
+                <div class="flex items-center gap-3 pt-1">
+                    <div class="w-8 h-8 rounded-full bg-brand-amber text-white flex items-center justify-center font-bold text-xs">AG</div>
+                    <div>
+                        <div class="text-xs font-bold text-brand-text font-display">Aman Gupta</div>
+                        <div class="text-[10px] text-brand-muted">Local Resident</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="py-16 bg-[#FFF9F2] border-t border-amber-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Contact Details -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div>
+                        <span class="font-script text-2xl text-brand-amber block">Visit or Call Us</span>
+                        <h2 class="font-display text-3xl sm:text-4xl font-black text-brand-text mt-1">MPMC Food Stall & Cafe</h2>
+                        <p class="text-xs text-brand-amber font-bold tracking-wide uppercase font-display">Magiee • Pasta • Macroni Corner</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Address Card -->
+                        <div class="p-4 rounded-2xl bg-white border border-amber-200/70 flex items-start gap-4 shadow-sm">
+                            <div class="w-10 h-10 rounded-xl bg-red-100 text-brand-red flex items-center justify-center shrink-0 text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-sm font-bold text-brand-text">Location & Address</h4>
+                                <p class="text-xs text-brand-muted mt-0.5 font-medium">
+                                    Nyay Khand 1st, Indirapuram, Ghaziabad, Uttar Pradesh - 201014
+                                </p>
+                                <span class="text-[11px] text-brand-amber font-semibold block mt-1">Near local marketplace & park</span>
+                            </div>
+                        </div>
+
+                        <!-- Phone / WhatsApp Card -->
+                        <div class="p-4 rounded-2xl bg-white border border-amber-200/70 flex items-start gap-4 shadow-sm">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 text-lg">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-display text-sm font-bold text-brand-text">Call / WhatsApp For Booking</h4>
+                                <p class="text-lg font-black text-brand-amber mt-0.5 font-display flex items-center gap-2">
+                                    <span>Coming Soon</span>
+                                    <span class="text-[10px] uppercase font-bold tracking-wider bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded-full">Opening Soon</span>
+                                </p>
+                                <div class="flex items-center gap-3 mt-2">
+                                    <button onclick="notifyComingSoon()" class="px-3.5 py-1.5 rounded-lg bg-brand-red hover:bg-brand-crimson text-white text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm font-display">
+                                        <i class="fa-solid fa-phone"></i> Call (Coming Soon)
+                                    </button>
+                                    <button onclick="notifyComingSoon()" class="px-3.5 py-1.5 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm font-display">
+                                        <i class="fa-brands fa-whatsapp"></i> WhatsApp (Coming Soon)
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Operating Hours -->
+                        <div class="p-4 rounded-2xl bg-white border border-amber-200/70 flex items-start gap-4 shadow-sm">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-brand-amber flex items-center justify-center shrink-0 text-lg">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-sm font-bold text-brand-text">Stall & Delivery Timings</h4>
+                                <p class="text-xs text-brand-muted mt-0.5">
+                                    Open All 7 Days: <strong class="text-brand-text">11:30 AM to 11:00 PM</strong>
+                                </p>
+                                <span class="text-[11px] text-emerald-600 font-semibold block mt-1">● Currently Serving Fresh Orders</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map & Directions Card -->
+                <div class="lg:col-span-6">
+                    <div class="rounded-3xl overflow-hidden border border-amber-200/80 bg-white shadow-lg relative p-4 space-y-4">
+                        <div class="h-72 w-full rounded-2xl overflow-hidden relative border border-amber-100">
+                            <!-- Embedded Google Map centered on Nyay Khand 1, Indirapuram -->
+                            <iframe 
+                                title="MPMC Location Map"
+                                class="w-full h-full border-0 contrast-105"
+                                src="https://maps.google.com/maps?q=Nyay+Khand+1st+Indirapuram+Ghaziabad&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+
+                        <div class="flex items-center justify-between px-2">
+                            <div>
+                                <h4 class="font-display text-xs font-bold text-brand-text">Nyay Khand 1st, Indirapuram</h4>
+                                <p class="text-[11px] text-brand-muted">Ghaziabad, Uttar Pradesh</p>
+                            </div>
+                            <a href="https://maps.google.com/?q=Nyay+Khand+1st+Indirapuram+Ghaziabad" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-amber-100 hover:bg-amber-200/80 text-brand-text rounded-xl text-xs font-bold flex items-center gap-1.5 transition-colors font-display">
+                                <i class="fa-solid fa-diamond-turn-right text-brand-amber"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-gray-300 text-xs py-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div>
+                <p class="font-display font-bold text-white text-sm">MPMC - Magiee Pasta Macroni Corner</p>
+                <p class="text-gray-400 mt-1">Nyay Khand 1st, Indirapuram, Ghaziabad | WhatsApp / Booking: Coming Soon</p>
+            </div>
+            <div class="text-gray-400">
+                &copy; <span id="current-year">2026</span> MPMC. All rights reserved. Made for food lovers.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Slide-over Cart Drawer Modal -->
+    <div id="cart-drawer-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 transition-opacity opacity-0 pointer-events-none duration-300">
+        <div id="cart-drawer" class="fixed right-0 top-0 bottom-0 w-full max-w-md bg-white border-l border-amber-200 shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out">
+            
+            <!-- Drawer Header -->
+            <div class="p-5 border-b border-amber-200/70 flex items-center justify-between bg-brand-cream">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-xl bg-brand-crimson flex items-center justify-center text-white shadow-sm">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-display text-base font-black text-brand-text">Your Food Basket</h3>
+                        <p class="text-[11px] text-brand-muted">MPMC Nyay Khand 1st Kitchen</p>
+                    </div>
+                </div>
+                <button id="close-cart-btn" class="w-8 h-8 rounded-lg bg-white hover:bg-amber-100 text-gray-500 hover:text-brand-text flex items-center justify-center transition-colors border border-amber-200">
+                    <i class="fa-solid fa-xmark text-sm"></i>
+                </button>
+            </div>
+
+            <!-- Delivery Zone Status in Cart -->
+            <div class="bg-amber-50 border-b border-amber-200 px-5 py-2.5 flex items-center justify-between text-xs">
+                <span class="text-brand-amber font-bold flex items-center gap-1.5 font-display">
+                    <i class="fa-solid fa-motorcycle"></i> <span id="cart-delivery-rule">Free Delivery (&lt; 2 KM)</span>
+                </span>
+                <span class="text-gray-500 text-[11px]">Max delivery: 3 KM</span>
+            </div>
+
+            <!-- Cart Items List Container -->
+            <div id="cart-items-container" class="flex-1 overflow-y-auto p-5 space-y-4">
+                <!-- Dynamically populated or empty state -->
+            </div>
+
+            <!-- Customer Details & Order Customization -->
+            <div class="p-5 bg-brand-cream/60 border-t border-amber-200 space-y-3">
+                <h4 class="font-display text-xs font-bold text-brand-text uppercase tracking-wider">Delivery Information</h4>
+                
+                <div class="grid grid-cols-2 gap-2">
+                    <input type="text" id="cust-name" placeholder="Your Name" class="bg-white border border-amber-200 rounded-lg px-3 py-2 text-xs text-brand-text placeholder-gray-400 focus:outline-none focus:border-brand-amber shadow-sm">
+                    <input type="tel" id="cust-phone" placeholder="Your Phone Number" class="bg-white border border-amber-200 rounded-lg px-3 py-2 text-xs text-brand-text placeholder-gray-400 focus:outline-none focus:border-brand-amber shadow-sm">
+                </div>
+                
+                <input type="text" id="cust-address" placeholder="House/Flat No, Block, Locality in Indirapuram" class="w-full bg-white border border-amber-200 rounded-lg px-3 py-2 text-xs text-brand-text placeholder-gray-400 focus:outline-none focus:border-brand-amber shadow-sm">
+                
+                <div class="flex items-center gap-2">
+                    <select id="cust-distance-select" class="w-full bg-white border border-amber-200 rounded-lg px-3 py-2 text-xs text-brand-text focus:outline-none focus:border-brand-amber shadow-sm">
+                        <option value="free">Delivery Distance: Under 2 KM (FREE)</option>
+                        <option value="nominal">Delivery Distance: 2 to 3 KM (+₹20)</option>
+                        <option value="takeaway">Self Pickup / Takeaway at Stall (FREE)</option>
+                    </select>
+                </div>
+
+                <textarea id="cust-notes" rows="1" placeholder="Special cooking instructions (e.g., extra spicy, less butter...)" class="w-full bg-white border border-amber-200 rounded-lg px-3 py-2 text-xs text-brand-text placeholder-gray-400 focus:outline-none focus:border-brand-amber shadow-sm"></textarea>
+            </div>
+
+            <!-- Pricing Summary & Checkout Button -->
+            <div class="p-5 border-t border-amber-200 bg-white space-y-3">
+                <div class="space-y-1.5 text-xs">
+                    <div class="flex justify-between text-brand-muted">
+                        <span>Items Subtotal</span>
+                        <span id="cart-subtotal" class="font-bold text-brand-text font-display">₹0</span>
+                    </div>
+                    <div class="flex justify-between text-brand-muted">
+                        <span>Delivery Fee</span>
+                        <span id="cart-delivery-fee" class="font-bold text-emerald-600 font-display">FREE</span>
+                    </div>
+                    <div class="flex justify-between text-sm font-black text-brand-text pt-1 border-t border-amber-100">
+                        <span class="font-display">Total Payable</span>
+                        <span id="cart-grand-total" class="text-brand-crimson text-lg font-display">₹0</span>
+                    </div>
+                </div>
+
+                <!-- Send Order to WhatsApp Button -->
+                <button id="checkout-whatsapp-btn" class="w-full py-3.5 px-4 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-black text-sm shadow-lg shadow-[#25D366]/25 transition-all flex items-center justify-center gap-2 font-display">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Order via WhatsApp (Coming Soon)</span>
+                </button>
+
+                <p class="text-[10px] text-gray-500 text-center">
+                    Online ordering & WhatsApp booking is launching very soon!
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mobile Bottom Floating Action Bar -->
+    <div class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur-lg border-t border-amber-200 px-4 py-3 flex items-center justify-between z-40 md:hidden shadow-lg">
+        <button onclick="notifyComingSoon()" class="flex items-center gap-2 text-brand-text font-bold text-xs bg-amber-50 hover:bg-amber-100 border border-amber-200 px-3.5 py-2.5 rounded-xl transition-all font-display">
+            <i class="fa-solid fa-phone text-brand-red"></i>
+            <span>Coming Soon</span>
+        </button>
+
+        <div class="flex items-center gap-2">
+            <!-- Mobile Cart Button -->
+            <button id="mobile-cart-btn" class="relative p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-brand-text flex items-center gap-1.5">
+                <i class="fa-solid fa-bag-shopping text-brand-amber"></i>
+                <span id="mobile-cart-counter" class="w-5 h-5 bg-brand-crimson text-white text-[11px] font-black rounded-full flex items-center justify-center">0</span>
+            </button>
+
+            <!-- Mobile WhatsApp Order Button -->
+            <button onclick="notifyComingSoon()" class="flex items-center gap-1.5 bg-[#25D366] text-white font-black text-xs px-3.5 py-2.5 rounded-xl shadow-md font-display">
+                <i class="fa-brands fa-whatsapp text-base"></i>
+                <span>Coming Soon</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Notification for Adding Items -->
+    <div id="toast" class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-white border border-amber-300 text-brand-text px-4 py-2.5 rounded-xl shadow-xl text-xs font-bold flex items-center gap-2 pointer-events-none opacity-0 transition-opacity duration-300 z-50">
+        <i class="fa-solid fa-circle-check text-emerald-600"></i>
+        <span id="toast-message" class="font-display">Added to cart!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
